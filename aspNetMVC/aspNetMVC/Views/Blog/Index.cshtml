@@ -1,0 +1,15 @@
+﻿@model IEnumerable<aspNetMVC.Models.BlogArticleViewModel>
+
+<div class="text-center mb-4">
+    <h1 class="display-4">Blog Articles</h1>
+</div>
+
+<ul class="list-group">
+    @foreach (var article in Model)
+    {
+        <li class="list-group-item">
+            <h5 class="mb-1">@article.Title</h5>
+            <p class="mb-1 text-muted">@article.Description</p>
+        </li>
+    }
+</ul>
